@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign-up Form Template</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Hello World</h1>
+        <div id="sidebar">
+            <div class="sidebar-banner"></div>
+            <p class="citation">
+                Photo by 
+                <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on 
+                <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a> 
+            </p>
+        </div>
+        <div id="main-body">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+            Sign up <em>now </em>to get started.</p>
+
+            <p>You <em>know</em> you want to.</p>
+
+            <form action="#" method="get">
+                <legend>Let's do this!</legend>
+
+                <label for="first_name">First name</label>
+                <input type="text" id="first_name">
+
+                <label for="last_name">Last name</label>
+                <input type="text" id="last_name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" id="phone_number">
+
+                <label for="password">Password</label>
+                <input type="password" id="password">
+
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password">
+            </form>
+
+            <button>Create Account</button>
+
+            <p>Already have an account? <a href="https://google.com" target="_blank" rel="noopener noreferrer">Log in</a></p>
+        </div>
     </body>
 </html>

@@ -1,3 +1,21 @@
-* {
-    color:red;
+:root{
+    color: black;
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+#sidebar{
+    flex: 1;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+#main-body{
+    flex: 2;
 }
