@@ -7,6 +7,7 @@
     color: black;
     height: 100%;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -38,6 +39,7 @@ body{
         left: 0;
         right: 0;
         top: 20%;
+        overflow: hidden;
         img{
             width: auto;
             height: 150px;
@@ -50,7 +52,9 @@ body{
     .citation{
         position: absolute;
         bottom: 1rem;
+        margin: 0;
         color: white;
+        text-align: center;
         :link, :visited{
             color: white;
         }
@@ -61,36 +65,81 @@ body{
     flex: 2;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    gap: 16px;
+    background-color: whitesmoke;
 
-    p{
+    p, legend{
         font-weight: bold;
+        font-size: 24px;
+        width: min(100% - 16px, 70%)
     }
 }
 
-#main-body > *{
-    padding-left: 16px;
+#main-body > p,button{
+    margin-left: 32px;
 }
 
 form{
-    background-color: whitesmoke;
+    background-color: white;
     box-shadow: 0px 1px 2px #202020;
-    padding: 16px 24px 24px;
-    width: auto;
+    padding: 24px 32px 32px 32px;
+    align-self: stretch;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
 
-    fields{
+    .fields{
+        flex: 1;
         display: flex;
         flex-wrap: wrap;
-        gap:48px
+        align-content: space-around;
         
-        label, input{
+
+        div{
+            width: 40%;
+        }
+        
+        label{
             display: block;
+        }
+
+        input{
+            display: block;
+            padding: 8px;
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
         }
     }
 }
 
+input:focus{
+    outline: 1px solid blue;
+    box-shadow: 0px 1px 2px #101010;
+}
+
+input[type=password]:invalid{
+    outline: 1px solid red;
+}
+
 button{
-    margin-top: 16px;
+    margin-top: 32px;
     background-color: #596D48;
+    padding: 16px 48px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+}
+
+.login-prompt{
+    font-weight: normal;
+
+    a{
+        color: #596D48;
+    }
+
+    a:link{
+        text-decoration: none;
+    }
 }
